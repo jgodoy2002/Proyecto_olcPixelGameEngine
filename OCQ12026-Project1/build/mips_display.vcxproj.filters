@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="18.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\jcgof\Downloads\OCQ12026-Project1\OCQ12026-Project1\Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\jcgof\Downloads\OCQ12026-Project1\OCQ12026-Project1\MipsDisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\jcgof\Downloads\OCQ12026-Project1\OCQ12026-Project1\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{39610F28-A271-361A-9AF4-892693911676}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

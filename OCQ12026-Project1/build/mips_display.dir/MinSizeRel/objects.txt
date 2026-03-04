@@ -1,0 +1,2 @@
+C:/Users/jcgof/Downloads/OCQ12026-Project1/OCQ12026-Project1/build/mips_display.dir/MinSizeRel/Main.obj
+C:/Users/jcgof/Downloads/OCQ12026-Project1/OCQ12026-Project1/build/mips_display.dir/MinSizeRel/MipsDisplay.obj
