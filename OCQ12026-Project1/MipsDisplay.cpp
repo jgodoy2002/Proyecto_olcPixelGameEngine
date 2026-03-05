@@ -26,15 +26,15 @@ bool MipsDisplay::OnUserDestroy()
 
 bool MipsDisplay::OnUserUpdate(float fElapsedTime)
 {   
-    if (GetKey(olc::Key::W).bHeld || GetKey(olc::Key::UP).bHeld)
+    if (GetKey(olc::Key::W).bPressed || GetKey(olc::Key::UP).bPressed)
         last_key = 1;
-    else if (GetKey(olc::Key::S).bHeld || GetKey(olc::Key::DOWN).bHeld)
+    else if (GetKey(olc::Key::S).bPressed || GetKey(olc::Key::DOWN).bPressed)
         last_key = 2;
-    else if (GetKey(olc::Key::A).bHeld || GetKey(olc::Key::LEFT).bHeld)
+    else if (GetKey(olc::Key::A).bPressed || GetKey(olc::Key::LEFT).bPressed)
         last_key = 3;
-    else if (GetKey(olc::Key::D).bHeld || GetKey(olc::Key::RIGHT).bHeld)
+    else if (GetKey(olc::Key::D).bPressed || GetKey(olc::Key::RIGHT).bPressed)
         last_key = 4;
-    else if (GetKey(olc::Key::SPACE).bHeld)
+    else if (GetKey(olc::Key::SPACE).bPressed)
         last_key = 5;
     else
         last_key = 0;
