@@ -56,7 +56,7 @@ void MipsDisplay::Flush()
 
 void MipsDisplay::RunEngine()
 {
-    thread_ = std::thread([this]() {
+   
         running = true;
 
         if (Construct(SCREEN_W, SCREEN_H, PIXEL_SIZE, PIXEL_SIZE)) {
@@ -64,7 +64,7 @@ void MipsDisplay::RunEngine()
         }
 
         running = false;
-    });
+    
 }
 
 void MipsDisplay::StopEngine()

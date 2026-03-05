@@ -43,15 +43,22 @@ ErrorCode handleSyscall(uint32_t* regs, void* mem, MemoryMap* mem_map)
         case 104:
         {
             if (display)
-                regs[Register::v0] = display->GetLastKey();
+            {
+                int key = display->GetLastKey();
+                printf("Key: %d\n", key);
+                fflush(stdout);
+                regs[Register::v0] = key;
+            }
             else
                 regs[Register::v0] = 0;
             return ErrorCode::Ok;
         }
         case 105:
         {
-            if (display)
+            if (display) {
                 display->StopEngine();
+                display.reset();
+            }
             return ErrorCode::Ok;
         }
         default:
